@@ -1,0 +1,3 @@
+query 
+
+SELECT product_categories.category_id,product_categories.name, COUNT(products.category_id) as jumlah from product_categories LEFT JOIN products on product_categories.category_id = products.category_id GROUP BY product_categories.category_id asc
